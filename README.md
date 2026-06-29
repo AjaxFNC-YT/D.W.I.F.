@@ -6,7 +6,7 @@
 
 <p align="center">
   <img src="https://img.shields.io/badge/node-18%2B-339933?style=flat-square&logo=node.js&logoColor=white" alt="Node 18+">
-  <img src="https://img.shields.io/badge/output-PNG-8A2BE2?style=flat-square" alt="PNG output">
+  <img src="https://img.shields.io/badge/output-PNG%20%7C%20WEBP%20%7C%20GIF-8A2BE2?style=flat-square" alt="PNG, WEBP, and GIF output">
   <img src="https://img.shields.io/badge/auto%20sizing-enabled-4C9A2A?style=flat-square" alt="Auto sizing enabled">
 </p>
 
@@ -64,7 +64,7 @@ That will:
 - keep the original image size
 - auto-calculate the top strip
 - auto-calculate the corner radius
-- save a PNG into the local `output` folder
+- save the fixed image into the local `output` folder
 
 If you run it with no paths:
 
@@ -79,6 +79,7 @@ it will ask for the input image and output file name.
 - put normal input images in `input/`
 - generated files always go into `output/`
 - if you want, you can also pass a full absolute path to an image outside the `input/` folder
+- static PNG / WEBP and animated WEBP / GIF are supported
 
 Examples:
 
@@ -101,6 +102,8 @@ Example:
 
 ```bash
 node index.mjs input.png output.png 17 36
+node index.mjs animation.webp fixed.webp
+node index.mjs animation.gif fixed.gif
 ```
 
 You can also override just one value and let the other auto-calculate.
@@ -117,8 +120,10 @@ node index.mjs --help
 
 ## Notes
 
-- Output is always saved as PNG.
+- Output format follows the output file extension: `.png`, `.webp`, or `.gif`.
 - The script keeps the original image size and aspect ratio.
+- Transparent WEBP files are supported.
+- Animated WEBP and GIF files keep their animation frames.
 - Auto sizing is based on these reference matches:
   - `512x512` -> `17 / 36`
   - `1844x853` -> `54 / 172`
