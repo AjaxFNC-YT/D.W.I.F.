@@ -1,13 +1,17 @@
-# Widget Image Resizer
+# D.W.I.F.
 
 <p align="center">
-  Small Node.js tool for adding a transparent top strip and rounded top-right corner to widget images.
+  Discord Widget Image Fixer.
 </p>
 
 <p align="center">
   <img src="https://img.shields.io/badge/node-18%2B-339933?style=flat-square&logo=node.js&logoColor=white" alt="Node 18+">
   <img src="https://img.shields.io/badge/output-PNG-8A2BE2?style=flat-square" alt="PNG output">
   <img src="https://img.shields.io/badge/auto%20sizing-enabled-4C9A2A?style=flat-square" alt="Auto sizing enabled">
+</p>
+
+<p align="center">
+  Small Node.js tool for adding a transparent top strip and rounded top-right corner to widget images.
 </p>
 
 <p align="center">

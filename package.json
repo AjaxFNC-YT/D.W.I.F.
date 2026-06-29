@@ -1,8 +1,8 @@
 {
-  "name": "widget-image-resizer",
+  "name": "dwif",
   "version": "1.0.0",
   "private": true,
-  "description": "Small CLI for adding a transparent top strip and rounded top-right corner to widget images.",
+  "description": "D.W.I.F. - Discord Widget Image Fixer.",
   "type": "module",
   "scripts": {
     "start": "node index.mjs"
